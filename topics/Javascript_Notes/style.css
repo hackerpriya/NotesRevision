@@ -1,0 +1,206 @@
+*{
+    /* padding: 0; */
+    margin: 0;
+    box-sizing: border-box;
+}
+
+#main{
+    padding: 10px;
+    /* padding-right: 40px; */
+}
+
+
+
+/* Navbar stylling Code */
+#navbar{
+    display: flex;
+    justify-content: flex-start;
+    flex: 1;
+    column-gap: 5px;
+    /* background-color: #1E0342; */
+    background-color: #0E46A3;
+
+    color: white;
+    padding: 1%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    /* gap: 30%; */
+}
+
+#logo{
+    display: inline-flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%; 
+    
+}
+
+#logo #logo-link{
+    text-decoration: none;
+    color: white;
+    display: block;
+    width: 100%;
+}
+
+#nav-links{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+#nav-links a{
+    text-decoration: none;
+    color: white;
+    font-weight: bolder;
+}
+#nav-links>button{
+    /* width: 104px; */
+    width: 9em;
+    border: none;
+    border-radius: 20px;
+    /* background-color: #0E46A3; */
+    background-color: #1E0342;
+
+    padding: 10px;
+    margin: 1%;
+}
+
+#nav-links>button:hover{
+    background-color: #C73659;
+}
+
+
+
+/* main content code */
+.top-heading{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.top-heading>h1{
+    font-size: 3em;
+}
+
+
+/* Specific Main Content Code */
+.heading{
+    font-size: 40px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    background-color: azure;
+}
+
+.titles{
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+}
+
+.titles>h1,.titles>h2{
+    padding-left: 10px;
+    padding-bottom: 20px;
+    /* align-items: center;
+    text-align: center; */
+    /* text-decoration: overline underline; */
+    margin: 10px;
+}
+
+li{
+    font-size: 20px;
+    padding-bottom: 2%;
+}
+
+img{
+    height: 200px;
+    width: fit-content;
+}
+
+embed{
+    width: 100%;
+    height: 80vh;
+    margin-left: 0;
+    margin-right: 0;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.nav-embed{
+    height: fit-content;
+}
+
+.grid-game embed{
+    height: 100vh;
+    width: 100vw;
+}
+
+table{
+
+    border-collapse: collapse;
+    margin: 20px;
+    font-size: 20px;
+    
+}
+
+table img{
+    height: 40%;
+    width: 50%;
+}
+
+.colh{
+    width: 5%;
+}
+.col1{
+    width: 35%;
+}
+.col2{
+    width: 35%;
+}
+
+th,td{
+    flex: 1;
+    border: 1px solid black;
+    /* padding: 2px; */
+    font-size: larger;
+}
+hr{
+    border: 2px solid black;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+#chessboard{
+    overflow: hidden;
+    height: 850px;
+    width: 850px;
+}
+
+body{
+    /* min-height: 100vh;
+    min-width: 100vw; */
+    overflow-x: hidden;
+}
+
+
+/* media queries */
+@media(max-width:1230px){
+    #navbar{
+        display: flex;
+        flex-direction: column;
+    }
+    #nav-links{
+        display: flex;
+        flex-direction: column;
+    }
+    #logo{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+    .top-heading{
+        align-items: flex-start;
+    }
+}
